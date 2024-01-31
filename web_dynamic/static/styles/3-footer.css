@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    background: rgb(124, 223, 122);
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #CCCCCC;
+}
+footer p {
+    position: absolute;
+    text-align: center;
+    font-size: large;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

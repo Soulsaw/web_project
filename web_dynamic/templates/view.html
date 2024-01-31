@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>E Measure</th>
+            <th>P Measure</th>
+            <th>LM Measure</th>
+            <th>TM Measure</th>
+            <th>LH Measure</th>
+            <th>C Measure</th>
+            <th>B Measure</th>
+            <th>TC Measure</th>
+            <th>G Measure</th>
+            <th>LJ Measure</th>
+            <th>LP Measure</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Ajoutez vos lignes de données ici -->
+        {% for measure in measures %}
+        <tr>
+            <td>{{measure.first_name}}</td>
+            <td>{{measure.last_name}}</td>
+            <td>{{measure.e_measure}}</td>
+            <td>{{measure.p_measure}}</td>
+            <td>{{measure.lm_measure}}</td>
+            <td>{{measure.tm_measure}}</td>
+            <td>{{measure.lh_measure}}</td>
+            <td>{{measure.c_measure}}</td>
+            <td>{{measure.b_measure}}</td>
+            <td>{{measure.tc_measure}}</td>
+            <td>{{measure.g_measure}}</td>
+            <td>{{measure.lj_measure}}</td>
+            <td>{{measure.lp_measure}}</td>
+            <td>{{measure.description}}</td>
+            <td><button id="edit_btn" data-id="{{measure.id}}">Modifier</button></td>
+        </tr>
+        {% endfor %}
+        <!-- Ajoutez d'autres lignes selon vos besoins -->
+    </tbody>
+</table>
+{% endblock %}

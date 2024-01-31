@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<div class="title">
+  <h1>Gestion des mesures</h1>
+</div>
+
+<div class="boxes-container">
+  <div class="box" onclick="openUrl('/new')">
+    <p>Nouvelle mesure</p>
+  </div>
+
+  <div class="box" onclick="openUrl('/view_edit')">
+    <p>Modifier une mesure</p>
+  </div>
+</div>
+
+<div class="boxes-container">
+  <div class="box" onclick="openUrl('/views')">
+    <p>Afficher</p>
+  </div>
+
+  <div class="box">
+    <p>Rechercher</p>
+  </div>
+</div>
+{% endblock %}

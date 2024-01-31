@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% block content %}
+<form method="post" action="/new">
+    <h1>Ajouter une mesure</h1>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <label for="e_measure">E Measure</label>
+    <input type="number" id="e_measure" name="e_measure">
+    <label for="p_measure">P Measure</label>
+    <input type="number" id="p_measure" name="p_measure">
+    <label for="lm_measure">LM Measure</label>
+    <input type="number" id="lm_measure" name="lm_measure">
+    <label for="tm_measure">TM Measure</label>
+    <input type="number" id="tm_measure" name="tm_measure">
+    <label for="lh_measure">LH Measure</label>
+    <input type="number" id="lh_measure" name="lh_measure">
+    <label for="c_measure">C Measure</label>
+    <input type="number" id="c_measure" name="c_measure">
+    <label for="b_measure">B Measure</label>
+    <input type="number" id="b_measure" name="b_measure">
+
+    <label for="tc_measure">TC Measure</label>
+    <input type="number" id="tc_measure" name="tc_measure">
+    <label for="g_measure">G Measure</label>
+    <input type="number" id="g_measure" name="g_measure">
+    <label for="lj_measure">LJ Measure</label>
+    <input type="number" id="lj_measure" name="lj_measure">
+
+    <label for="lp_measure">LP Measure</label>
+    <input type="number" id="lp_measure" name="lp_measure">
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description">
+    <!-- Ajoutez les autres champs ici selon le même modèle -->
+
+    <label for="image_url">Image URL</label>
+    <input type="file" id="image_url" name="image_url">
+
+    <button type="submit">OK</button>
+</form>
+{% endblock %}
